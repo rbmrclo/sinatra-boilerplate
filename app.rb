@@ -1,4 +1,5 @@
 set :haml, :format => :html5
+# Uncomment this to enable caching
 # set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
 set :public_folder, Proc.new { File.join(root, "static") }
 
@@ -13,5 +14,5 @@ end
 
 get '/javascripts/:name.js' do
   content_type 'text/javascript'
-  coffee :"javascripts/#{params[:name]}"
+  coffee(:"javascripts/#{params[:name]}")
 end

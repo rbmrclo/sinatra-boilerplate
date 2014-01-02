@@ -1,4 +1,5 @@
 # Sinatra Boilerplate
+
 A great place to start with [Sinatra](http://www.sinatrarb.com/), [Twitter Bootstrap](http://getbootstrap.com/), [Compass](http://compass-style.org/), [CoffeeScript](http://coffeescript.org/) and [Haml](http://haml.info/) to build your awesome static website.
 
 ## TL;DR
