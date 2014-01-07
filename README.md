@@ -1,6 +1,14 @@
 # Sinatra Boilerplate
 
-A great place to start with [Sinatra](http://www.sinatrarb.com/), [Twitter Bootstrap](http://getbootstrap.com/), [Compass](http://compass-style.org/), [CoffeeScript](http://coffeescript.org/) and [Haml](http://haml.info/) to build your awesome static website.
+A great place to start with [Sinatra](http://www.sinatrarb.com/) and [Twitter Bootstrap](http://getbootstrap.com/) to build your simple awesome website. Easy to deploy on Heroku.
+
+## What's included?
++ [Compass](http://compass-style.org/)
++ [CoffeeScript](http://coffeescript.org/)
++ [Haml](http://haml.info/)
++ Memcached
++ Livereload
++ Unicorn
 
 ## TL;DR
 
@@ -20,6 +28,13 @@ $ bundle install
 $ shotgun
 ```
 
+## Enable livereload
+
+Run guard in another the terminal
+``` bash
+$ guard
+```
+
 ## Deploy
 
 ````
@@ -27,7 +42,14 @@ heroku create appname
 git push heroku master
 ````
 
+## Enable caching for heroku
+
+``` bash
+$ heroku addons:add memcached
+```
+
 That's it.
+
 
 ##	Structure
 
@@ -42,6 +64,12 @@ This folder is for your customized javascript files.
 
 ###	`views/stylesheets`
 This folder is for your customized stylesheets.
+
+### `Guardfile`
+Configure this file if you will be using livereload.
+
+### `Gemfile`
+Ingredients for your sorcery :p
 
 
 License
