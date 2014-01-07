@@ -35,6 +35,19 @@ Run guard in another the terminal
 $ guard
 ```
 
+```
+After running guard, this line should be added by rack in the <head> tag:
+
+<script type="text/javascript">
+    WEB_SOCKET_SWF_LOCATION = "/__rack/WebSocketMain.swf";
+    
+  </script>
+  <script type="text/javascript" src="/__rack/swfobject.js"></script>
+  <script type="text/javascript" src="/__rack/web_socket.js"></script>
+
+<script type="text/javascript" src="/__rack/livereload.js?host=localhost"></script>
+```
+
 ## Deploy
 
 ````
